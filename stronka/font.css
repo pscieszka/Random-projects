@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Neometric';
+    src: local('Neometric Alt Bold'), local('Neometric-Alt-Bold'),
+        url('NeometricAlt-Bold.woff2') format('woff2'),
+        url('NeometricAlt-Bold.woff') format('woff'),
+        url('NeometricAlt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  body {
+    background: linear-gradient(#202020,#131313) ; 
+    margin: 0;
+    font-family:Neometric;
+  }
+  
+  .top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .header {
+    padding: 10px 16px;
+    background: linear-gradient(rgb(255, 255, 255),rgb(231, 231, 231)); 
+    color: #f1f1f1;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  .name {
+    position:relative;
+     left:300px;
+     font-size:50px
+  }
+  .aboutus {
+    position:relative;
+     left:950px;
+     font-size:30px
+  }
+  
+  .ourserive {
+    position:relative;
+     left:1000px;
+     font-size:30px
+    
+  }
+  .contact {
+    position:relative;
+     left:1050px;
+     font-size:30px 
+    
+  }

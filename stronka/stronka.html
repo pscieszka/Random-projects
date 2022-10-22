@@ -1,81 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="font.css">
+  <script defer src="main.js"></script>
 <style>
-  @font-face {
-    font-family: 'Neometric';
-    src: local('Neometric Alt Bold'), local('Neometric-Alt-Bold'),
-        url('NeometricAlt-Bold.woff2') format('woff2'),
-        url('NeometricAlt-Bold.woff') format('woff'),
-        url('NeometricAlt-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-body {
-  background: linear-gradient(#202020,#131313) ;
-  margin: 0;
-  font-family:Neometric;
-}
-
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-.header {
-  padding: 10px 16px;
-  background: linear-gradient(rgb(255, 255, 255),rgb(231, 231, 231));
-  color: #f1f1f1;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-.name {
-  position:relative;
-   left:300px;
-   font-size:50px
-}
-.aboutus {
-  position:relative;
-   left:950px;
-   font-size:30px
-}
-
-.ourserive {
-  position:relative;
-   left:1000px;
-   font-size:30px
-  
-}
-.contact {
-  position:relative;
-   left:1050px;
-   font-size:30px 
-  
-}
 </style>
 </head>
 <body>
 
 
+
 <div class="header" id="myHeader">
   <div style = "position:relative; top:2px; color:black; ">
     <span id="name" class="name">Dupsko320</span>
-    <span id="aboutus" class="aboutus">About us</span>
-    <span id="ourserive" class="ourserive">Our service</span>
-    <span id="contact" class="contact">Contact</span>
+    <span id="aboutus" class="aboutus"><a style="text-decoration:none;color: black;"href="https://pl.wikipedia.org/wiki/Dog">About us</a></span>
+    <span id="ourserive" class="ourserive"><a style="text-decoration:none;color: black;"href="https://pl.wikipedia.org/wiki/Cat">Our service</a></span>
+    <span id="contact" class="contact"><a style="text-decoration:none;color: black;"href="https://pl.wikipedia.org/wiki/Turtle">Contact</a></span>
 
  </div>
  
@@ -107,20 +47,6 @@ body {
   <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 </div>
 </h3>
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 
 </body>
 </html>
