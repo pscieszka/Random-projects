@@ -2,6 +2,7 @@ import json
 import requests
 from io import StringIO
 from playsound import playsound
+
   
 key = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
 
@@ -18,6 +19,7 @@ while(True):
     print(x)
     
 
+
     data = requests.get(key)  
     data = data.json()
     a = StringIO()
@@ -28,12 +30,12 @@ while(True):
     
     if x > y:
 
-       playsound('buy.wav')
+        playsound('sell.wav')
 
     elif x < y:
 
-        print("es")
-        
+        playsound('buy.wav')
+
     else:
         print("same")
     del x,y
