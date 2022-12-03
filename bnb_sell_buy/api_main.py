@@ -30,11 +30,11 @@ while(True):
     
     if x > y:
 
-        playsound('sell.wav')
+        playsound(r'C:\Users\Piotr\Desktop\Random-projects\bnb_sell_buy\sell.wav')
 
     elif x < y:
 
-        playsound('buy.wav')
+        playsound(r'C:\Users\Piotr\Desktop\Random-projects\bnb_sell_buy\buy.wav')
 
     else:
         print("same")
